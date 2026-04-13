@@ -1,6 +1,7 @@
+**/.pio/
+**/.vscode/ 
 build/
 install/
 log/
-.vscode/
 hardware.code-workspace
 **/*.pyc
