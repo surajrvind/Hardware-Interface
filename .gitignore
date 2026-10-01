@@ -3,5 +3,13 @@
 build/
 install/
 log/
+frames/
+frames_*.gv
+frames_*.pdf
+__pycache__/
+*.pyc
+.venv/
+venv/
+.DS_Store
 hardware.code-workspace
 **/*.pyc

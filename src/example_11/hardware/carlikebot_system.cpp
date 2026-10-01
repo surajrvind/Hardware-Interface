@@ -157,9 +157,9 @@ hardware_interface::CallbackReturn CarlikeBotSystemHardware::on_init(
   // ROS2 node for Hardware Interface
   node_ = rclcpp::Node::make_shared("carlikebot_hw_node");
   executor_.add_node(node_);
-  // Publisher for sending commands to the ESP
+  // Publisher topic for sending commands to the ESP
   comms_pub_ = node_->create_publisher<std_msgs::msg::Float32MultiArray>("esp_commands", 10);
-  // Subscriber for receiving state updates from the ESP
+  // Subscriber node for receiving state updates from the ESP
   state_sub_ = node_->create_subscription<std_msgs::msg::Float32MultiArray>(
         "/esp_state", 10, std::bind(&CarlikeBotSystemHardware::state_callback, this, std::placeholders::_1));
 

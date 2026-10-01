@@ -25,6 +25,7 @@ setup(
     entry_points={
         'console_scripts': [
         'twist_bridge = twist_bridge.twist_bridge_node:main',
+        'gamepad_publisher = twist_bridge.gamepad_publisher:main',
     ],
 },
 )
