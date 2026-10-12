@@ -2,7 +2,7 @@
 **/.vscode/ 
 build/
 install/
-log/
+/log/
 frames/
 frames_*.gv
 frames_*.pdf
