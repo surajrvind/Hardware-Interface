@@ -21,9 +21,9 @@ def generate_launch_description():
 	
 	return LaunchDescription([
         lidar_type_arg,
-        lidar_launch,
+        #lidar_launch,
         slam_4ros_gmapping_launch,
-        slam_x3_gmapping_launch
+        #slam_x3_gmapping_launch
     ])
                                
 

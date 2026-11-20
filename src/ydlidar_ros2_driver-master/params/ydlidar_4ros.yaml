@@ -1,6 +1,6 @@
 ydlidar_ros2_driver_node:
   ros__parameters:
-    port: /dev/ydlidar
+    port: /dev/ttyUSB0
     topic: /scan
     frame_id: laser
     ignore_array: ""

@@ -2,7 +2,7 @@ import pygame
 import serial
 import time
 
-# ===== SERIAL CONFIG =====
+===== SERIAL CONFIG =====
 SERIAL_PORT = '/dev/ttyACM0'   # change if needed
 BAUD_RATE = 115200
 
@@ -13,6 +13,10 @@ time.sleep(2)  # allow Arduino reset
 # ===== INIT GAMEPAD =====
 pygame.init()
 pygame.joystick.init()
+
+controller_count = pygame.joystick.get_count()
+
+print(f"controllers detected: {controller_count}")
 
 if pygame.joystick.get_count() == 0:
     print("No controller detected")
